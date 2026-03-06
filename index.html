@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=640, initial-scale=1.0">
+  <title>Turn EatMan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Turn EatMan</h1>
+  <div id="game-container">
+  <canvas id="game-canvas" width="864" height="984"></canvas>
+<div id="power-timer"></div>
+</div>
+<div id="ui"></div>
+<div id="touch-controls">
+  <div class="dpad-row">
+    <button class="tc-btn" id="tc-up">▲</button>
+  </div>
+  <div class="dpad-row">
+    <button class="tc-btn" id="tc-left">◀</button>
+    <span style="display:inline-block;width:60px;"></span>
+    <button class="tc-btn" id="tc-right">▶</button>
+  </div>
+  <div class="dpad-row">
+    <button class="tc-btn" id="tc-down">▼</button>
+  </div>
+</div>
+<div id="tts-unlock-container" style="margin-top:12px;">
+  <button id="tts-unlock-btn" style="font-size:1.1em;padding:8px 18px;">音声実況を有効化（iOS対策）</button>
+  <div style="font-size:0.95em;color:#FFD700;margin-top:4px;">iOS（iPhone/iPad）では最初にこのボタンを押すと実況音声が有効になります。</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
